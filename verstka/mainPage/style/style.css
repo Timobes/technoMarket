@@ -143,7 +143,7 @@ body {
 }
  
 .full__catalog__item {
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: wrap;
 
@@ -153,6 +153,10 @@ body {
     height: 100%;
 
     padding: 20px 0 0 20px;
+}
+
+.full__catalog__item.open {
+    display: flex; /* Показываем открытые элементы */
 }
 
 .full__catalog__item__container {

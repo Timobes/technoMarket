@@ -36,33 +36,82 @@ body {
 
 :root {
     --max-width: 1440px;
-    --content-width: 1140px;
+    --content-width: 100%;
+    --content-margin: 0 112px;
 
     --design-color-1: #FF1717;
     --gray-color: #D9D9D9;
+}
+
+.action-btn {
+    background-color: var(--design-color-1);
+    padding: 12px 16px;
+    color: #fff;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.buy-btn {
+    width: 100%;
 }
 
 /* Header start */
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     position: sticky;
     top: 0;
     z-index: 10;
 
     width: 100%;
-    height: 120px;
 
-    padding: 40px 24px;
+    padding: 24px 48px;
 
     color: #fff;
     background-color: #fff;
 
-    column-gap: 64px;
+    column-gap: 96px;
 
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 6px 48px;
+
+    position: relative;
+    top: 0;
+
+    background-color: #D9D9D9;
+}
+.header__top__left {
+    display: flex;
+    column-gap: 24px;
+}
+
+.header__top__link {
+    color: #000;
+}
+
+.header__top__right {
+    display: flex;
+    column-gap: 24px;
+}
+
+.header__left {
+    display: flex;
+    column-gap: 24px;
+}
+
+.header__right {
+    display: flex;
+    column-gap: 24px;
 }
 
 .logo__container {
@@ -202,7 +251,7 @@ body {
 /* Full catalog end */
 
 .search__container {
-    width: 400px;
+    width: 560px;
 
     display: flex;
 }
@@ -231,8 +280,7 @@ body {
 .header__nav__container {
     display: flex;
     align-items: center;
-
-    column-gap: 64px;
+    column-gap: 24px;
 }
 
 .header__nav__item {
@@ -244,11 +292,6 @@ body {
 .header__auth__container {
     background-color: var(--design-color-1);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 106px;
     border-radius: 12px;
 }
 
@@ -261,14 +304,14 @@ body {
 .main {
     max-width: var(--content-width);
 
-    margin: auto;
+    margin: var(--content-margin);
 
     display: flex; 
     flex-direction: column;
 
-    padding: 120px 0;
+    padding: 96px 0;
 
-    row-gap: 120px;
+    row-gap: 96px;
 }
 
 /* Main end */
@@ -276,12 +319,13 @@ body {
 /* Hero start */
 
 .hero {
-    background-color: var(--design-color-1);
+    /* background-color: var(--design-color-1); */
 
     width: 100%;
     height: 260px;
 
     display: flex;
+    justify-content: center;
 
     border-radius: 24px;
 }
@@ -321,6 +365,8 @@ body {
     
     width: 100%;
     height: 400px;
+
+    row-gap: 24px;
 }
 
 .product__container__heading {
@@ -330,17 +376,17 @@ body {
 }
 
 .product__container__item {
-    width: 250px;
+    width: 214px;
     height: 100%;
 
     position: relative;
 
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
 }
 
 .product__item-img {
-    width: 210px;
-    height: 210px;
+    width: 100%;
+    height: 202px;
 }
 
 .product__rating__container {
@@ -366,9 +412,14 @@ body {
 .product__price__old__item {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    /* margin-top: 52px; */
 
-    margin-top: 52px;
+    width: 120px;
 
+    margin-top: 12px;
+    margin-bottom: 24px; 
+    
     column-gap: 8px;
 }
 
@@ -396,9 +447,10 @@ body {
 }
 
 .product__price {
-    position: absolute;
-
-    bottom: 20px;
+    /* position: absolute; */
+    /* bottom: 20px; */
+    /* margin-top: 12px;
+    margin-bottom: 24px; */
 }
 
 /* product end */
@@ -409,15 +461,17 @@ body {
 .company__container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: center;
 
-    column-gap: 46px;
+    column-gap: 24px;
 
     width: 100%;
 }
 
 .company__container__heading {
     width: 100%;
+
+    text-align: center;
 
     font-size: 20px;
 }
@@ -465,29 +519,26 @@ body {
     align-items: center;
     justify-content: space-around;
 
-    width: 292px;
-    height: 44px;
+    width: 236px;
+    height: 40px;
+
+    
 
     border-radius: 8px;
 }
 
 .publick__nav__item {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.publick__nav__item:hover {
     color: #fff;
 }
 
 .publick__nav__all-btn {
     background-color: var(--design-color-1);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    width: 164px;
-    height: 44px;
-
     color: #fff;
-
-    border-radius: 8px;
 }
 
 .publick__item {
@@ -541,9 +592,9 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 14px;
+    padding: 48px 69px;
 
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .email__ad__text {
@@ -557,7 +608,7 @@ body {
 
     border-radius: 12px;
 
-    width: 426px;
+    width: 278px;
     height: 46px;
 }
 
@@ -569,22 +620,16 @@ body {
 
     padding: 11px 0 11px 8px;
 
+    border: 1px solid var(--design-color-1);
+
     color: #848484;
     font-weight: 600;
 }
 
 .email-btn {
     background-color: var(--design-color-1);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     color: #fff;
     border-radius: 0 12px 12px 0;
-
-    width: 126px;
-    height: 100%;
 }
 
 .email-btn:hover {
@@ -599,15 +644,16 @@ body {
     background-color: var(--gray-color);
 
     width: 100%;
-    height: 630px;
 
-    padding: 20px 0 16px 0;
+    padding: 24px 112px;
 }
 
 .footer__container {
     width: var(--content-width);
 
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
 }
 
 .footer__head {
@@ -640,20 +686,16 @@ body {
     border-radius: 8px;
 }
 
-.hr-line {
-    width: 100%;
-    border: 1px solid #fff;
-
-    margin: 20px 0 28px 0;
-}
-
 .footer__nav {
     display: flex;
-    /* column-gap: 60px; */
     justify-content: space-between;
     flex-wrap: wrap;
 
-    height: 430px;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+
+    height: 100%;
+
+    padding: 24px 0;
 
     color: #000;
 }
@@ -661,7 +703,7 @@ body {
 .footer__nav__elem {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 24px;
 }
 
 .footer__nav__heading {
@@ -674,8 +716,16 @@ body {
 }
 
 .footer__foot {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+
 }
 .footer__policy {
+    color: #000;
+    text-decoration: underline;
 }
 .cod-ink {
 }

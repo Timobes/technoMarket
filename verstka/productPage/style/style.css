@@ -1,0 +1,294 @@
+/* Main start */
+
+.main {
+    max-width: var(--content-width);
+
+    margin: var(--content-margin);
+
+    display: flex; 
+    flex-direction: column;
+
+    padding: 96px 0;
+
+    row-gap: 96px;
+}
+
+/* Main end */
+
+.breadcrumb__navigation {
+    display: flex;
+
+    column-gap: 24px;
+}
+
+.breadcrumb__elem {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb__elem:hover {
+    cursor: pointer;
+}
+
+.breadcrumb__line {
+    width: 20px;
+
+    margin: auto 0;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.product__presentation__container {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    column-gap: 96px;
+}
+
+
+
+
+.product__presentation__img__container {
+    display: flex;
+
+    column-gap: 24px;
+}
+
+.product__mini__img__container {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 24px;
+}
+
+.product__mini__img__item {
+}
+
+.product__all-size__img__container {
+    width: 358px;
+    height: 100%;
+}
+
+.product__all-size__img {
+    width: 100%;
+}
+
+.product__presentation__info__container {
+    width: 675px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    height: fit-content;
+}
+
+.product__presentation__info__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__review__heading {
+    display: flex;
+}
+
+.product__presentation__info__right {
+    width: 292px;
+    height: 98px;
+
+    display: flex;
+}
+
+.product__name__star__code {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    column-gap: 24px;
+}
+
+.product__name {
+    width: 100%;
+
+    font-size: 24px;
+}
+
+.product__rating__container {
+}
+
+.rating__star {
+}
+
+.product__review__amount {
+}
+
+.product__review__star__container {
+    column-gap: 2px;
+    display: flex;
+}
+
+.product__code {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.product__code-span {
+}
+
+.product__presentation__characteristic__container {
+    width: 340px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.product__presentation__characteristic__block {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentation__characteristic__name {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.presentation__characteristic__value {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__action__container {
+    background-color: #F4F5F6;
+
+    padding: 12px 16px;
+
+    width: max-content;
+
+    border-radius: 12px;
+
+    display: grid;
+    row-gap: 12px;
+}
+
+.product__price {
+    font-size: 24px;
+}
+
+.product__action {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.product__add {
+
+}
+
+.like-btn {
+
+}
+
+.product__full__bio__container {
+    display: grid;
+    row-gap: 24px;
+}
+
+.product__full__bio__heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product__full__bio__text {
+    width: 60%;
+}
+
+.product__full__characteristic__container {
+    width: 40%;
+}
+
+.product__presentation__characteristic__block {
+}
+.presentation__characteristic__name {
+}
+.presentation__characteristic__value {
+}
+
+
+
+.product__reviews__container {
+    display: grid;
+    row-gap: 96px;
+}
+
+.product__review__all {
+    position: relative;
+}
+
+.product__reviews__action__container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.product__review__left__block {
+}
+.product__rating__container {
+}
+.product__review__amount {
+}
+.rating__star {
+}
+.product__review__right__block {
+}
+
+.product__all__review__container {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 24px;
+
+    width: 80%;
+}
+
+.product__full__review {
+    width: 100%;
+
+    background-color: #F4F5F6;
+    padding: 20px;
+    border-radius: 12px;
+}
+.review__author {
+}
+.review__text {
+    height: 120px;
+}
+.product__full__review__img__container {
+}
+.full__review__img {
+}
+.product__review__filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: grid;
+    row-gap: 24px;
+}
+
+.review__filter__line {
+    border-top: 1px solid #000;
+    margin: auto 0;
+}
+
+.review__filter__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.review__filter__block > label > input {
+    accent-color: #000;
+}

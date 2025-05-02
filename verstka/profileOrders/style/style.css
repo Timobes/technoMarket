@@ -1,0 +1,115 @@
+/* Main start */
+
+.main {
+    max-width: var(--max-width);
+
+    margin: var(--content-margin);
+
+    display: flex; 
+    /* flex-wrap: wrap; */
+
+    padding: 96px 0;
+
+    row-gap: 96px;
+    column-gap: 96px;
+}
+
+/* Main end */
+
+
+/* Profile  nav */
+
+.profile__nav__menu {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    width: 260px;
+    min-height: 480px;
+    height: max-content;
+
+    row-gap: 24px;
+
+    background-color: #F4F5F6;
+    border-radius: 16px;
+}
+
+.profile__nav__item {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 8px;
+}
+
+.profile__nav__item__heading {
+    color: #000;
+
+    font-size: 14px;
+}
+
+.profile__nav__item__submenu {
+    color: #5E5E5E;
+
+    font-size: 12px;
+}
+
+/* --------------------------------------------- */
+
+.profile__orders__container {
+    width: 100%;
+
+}
+
+.profile__orders__search {
+    width: 100%;
+    height: fit-content;
+
+    display: grid;
+    row-gap: 24px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background-color: #F4F5F6;
+}
+
+.profile__orders__search__heading {
+    font-size: 20px;
+}
+
+.orders__number {
+    font-size: 10px;
+}
+
+.profile__orders__search__container {
+    width: 534px;
+    height: 40px;
+
+    position: relative;
+}
+
+.profile__orders__search-inp {
+    width: 534px;
+    height: 40px;
+
+    padding: 12px;
+
+    position: relative;
+
+    border: 1px solid #000;
+    border-radius: 12px;
+
+    background-color: inherit;
+}
+
+.search-img {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    color: #000;
+}
+

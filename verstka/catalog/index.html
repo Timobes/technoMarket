@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+    <script>
+        $( function() {
+          $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 500000,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+              $( "#amount" ).val(ui.values[ 0 ] + "руб" + " - " + ui.values[ 1 ] + "руб");
+            }
+          });
+          $( "#amount" ).val($( "#slider-range" ).slider( "values", 0 ) + "руб" +
+            " - " + $( "#slider-range" ).slider( "values", 1 ) + "руб");
+        } );
+
+        $( function() {
+          $( "#slider-range2" ).slider({
+            range: true,
+            min: 10,
+            max: 2000,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+              $( "#amount2" ).val(ui.values[ 0 ] + "ватт" + " - " + ui.values[ 1 ] + "ватт");
+            }
+          });
+          $( "#amount2" ).val($( "#slider-range2" ).slider( "values", 0 ) + "ватт" +
+            " - " + $( "#slider-range2" ).slider( "values", 1 ) + "ватт");
+        } );
+    </script>
+
     <!-- Meta information -->
 
     <link rel="stylesheet" href="../generalStyle/style.css">
@@ -182,12 +217,12 @@
                         <div class="catalog__page__filter__block__heading">
                             Цена
                         </div>
-                       
-                        <input type="number" name="" id="catalog_min_price_box" class="catalog-min-price-box">
-                        <input type="number" name="" id="catalog_max_price_box" class="catalog-max-price-box">
 
-                        <input type="range" name="" id="catalog_min_price_inp">
-                        <input type="range" name="" id="catalog_max_price_inp">  
+                        <p>
+                            <input type="text" id="amount" readonly="" class="catalog_min_price_inp">
+                        </p>
+                           
+                        <div id="slider-range"></div>
                     </fieldset>
 
                     <fieldset class="catalog__page__filter__block">
@@ -239,11 +274,11 @@
                             Мощность всасывания
                         </div>
                        
-                        <input type="number" name="" id="catalog_min_power_box" class="catalog-min-power-box">
-                        <input type="number" name="" id="catalog_max_power_box" class="catalog-max-power-box">
-
-                        <input type="range" name="" id="catalog_min_power_inp">
-                        <input type="range" name="" id="catalog_max_power_inp">  
+                        <p>
+                            <input type="text" id="amount2" readonly="" class="catalog_min_price_inp">
+                        </p>
+                           
+                        <div id="slider-range2"></div>
                     </fieldset>
 
                     <fieldset class="catalog__page__filter__block">
@@ -288,7 +323,7 @@
                         </label>
                     </fieldset>
 
-                    <button type="reset">Очистить</button>
+                    <button type="reset" class="catalog__reset__btn">Очистить</button>
                 </form>
                 <div class="catalog__page__product__container">
                     <a href="#" class="product__container__item">

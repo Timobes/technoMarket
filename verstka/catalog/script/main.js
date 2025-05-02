@@ -61,3 +61,7 @@ catalog_min_power_inp.addEventListener("input", () => {
 catalog_max_power_inp.addEventListener("input", () => {
     catalog_max_power_box.value = catalog_max_power_inp.value;
 });
+
+
+// Slider
+

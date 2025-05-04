@@ -32,3 +32,8 @@ categoryItems.forEach((item, index) => {
         }
     });
 });
+
+
+// auth popup
+
+const popup = document.getElementById

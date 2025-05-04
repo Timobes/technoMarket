@@ -12,6 +12,8 @@
 
     row-gap: 96px;
     column-gap: 96px;
+
+    height: fit-content;
 }
 
 /* Main end */
@@ -27,7 +29,7 @@
 
     width: 260px;
     min-height: 480px;
-    height: max-content;
+    /* height: max-content; */
 
     row-gap: 24px;
 
@@ -113,3 +115,102 @@
     color: #000;
 }
 
+
+.profile__orders__container {
+    display: grid;
+    row-gap: 24px;
+}
+
+.profile__orders__all-orders__container {
+    width: 100%;
+
+    display: grid;  
+    row-gap: 24px;
+}
+
+.profile__orders_all-orders__item {
+    background-color: #F4F5F6;
+
+    border-radius: 16px;
+
+    display: grid;
+    row-gap: 24px;
+
+    padding: 20px;
+}
+
+.orders__top {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #000;
+}
+
+.orders__code__AND__date {
+    display: grid;
+    row-gap: 24px;
+}
+
+.orders__code {
+    font-size: 16px;
+}
+
+.orders__code__span {
+}
+.orders__date {
+}
+
+.orders__amount__AND__status {
+    display: grid;
+    row-gap: 24px;
+}
+
+.orders__amount {
+    font-size: 16px;
+}
+
+.orders__status {
+}
+
+.orders__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orders__info__container {
+    display: grid;
+    row-gap: 24px;
+}
+
+.orders__info__date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.orders__info__reception {
+}
+
+.orders__info__address {
+    width: 336px;
+
+    font-size: 12px;
+}
+
+.orders__info__work-time {
+    font-size: 12px;
+}
+
+.orders__action__container {
+}
+.orders__buy-btn {
+}
+
+.orders__detailed {
+}
+
+.orders__img__container {
+    width: 148px;
+}
+
+.orders-img {
+}

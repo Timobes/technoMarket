@@ -58,3 +58,111 @@
 
 /* --------------------------------------------- */
 
+.orderDetail__container {
+    display: grid;
+    row-gap: 24px;
+}
+
+.orderDetail__info {
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F5F6;
+    row-gap: 24px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+}
+
+.orders__code__AND__date {
+
+}
+
+.orders__code {
+}
+.orders__code__span {
+}
+.orders__date {
+}
+
+.orders__info__container {
+    display: grid;
+    row-gap: 24px;
+}
+
+.orders__info__date {
+    font-size: 16px;
+    font-weight: bold;
+}
+.orders__info__reception {
+}
+.orders__info__address {
+}
+.orders__info__work-time {
+}
+
+.orderDetail__info__item {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    column-gap: 24px;
+    
+    max-width: 500px;
+
+    padding: 20px;
+
+    background-color: #F4F5F6;
+
+    border-radius: 16px;
+}
+
+.orderDetail__info-img {
+    width: 64px;
+    height: 64px;
+}
+
+.orderDetail__item__name {
+}
+.order__amount__AND__sum {
+}
+.order__amount {
+}
+.order__sum {
+}
+
+.orderDetail-btn {
+    height: fit-content;
+}
+
+.action-btn {
+}
+
+.orderDetail__payment__container {
+    width: 240px;
+    height: fit-content;
+
+    display: grid;
+    row-gap: 24px;
+
+    background-color: #F4F5F6;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.orderDetail__payment__status {
+    display: grid;
+    row-gap: 24px;
+}
+
+.orderDetail__payment__status__heading {
+}
+
+.orderDetail__payment__status__bool {
+}
+
+.orderDetail__payment__status__amount {
+}

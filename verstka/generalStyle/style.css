@@ -50,6 +50,7 @@ body {
     border-radius: 12px;
     font-weight: 600;
     width: fit-content;
+    height: fit-content;
 }
 
 .buy-btn {

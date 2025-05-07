@@ -495,3 +495,37 @@ body {
 }
 
 /* product end */
+
+
+
+
+/* All basket style start */
+
+.return-back-btn {
+    background-color: var(--design-color-1);
+
+    color: #fff;
+
+    padding: 12px;
+}
+
+.back-arrow {
+    
+}
+
+.basket__page__container {
+    display: grid;
+    row-gap: 24px;
+}
+
+.basket__page__heading {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.basket__page__text {
+    font-size: 20px;
+}
+
+
+/* All basket style end */

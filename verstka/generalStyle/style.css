@@ -507,10 +507,12 @@ body {
     color: #fff;
 
     padding: 12px;
+
+    border-radius: 12px;
 }
 
 .back-arrow {
-    
+
 }
 
 .basket__page__container {
@@ -526,6 +528,118 @@ body {
 .basket__page__text {
     font-size: 20px;
 }
+
+/* --------------------------------------------------- */
+
+.basket__info__container {
+    width: 750px;
+
+    display: grid;
+
+    gap: 24px;
+}
+
+.basket__check__btn__container {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #F4F5F6;
+}
+
+.basket__check__all {
+}
+.basket__del__checked {
+    background-color: inherit;
+
+    color: #009DFF;
+    text-decoration: underline;
+}
+
+.basket__info__item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    background-color: #f4f5f6;
+
+    padding: 20px;
+}
+
+.basket__info__img {
+}
+
+.basket__info__name {
+    width: 30%;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.basket__info__product__amount__counter {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100px;
+}
+
+.amount__counter {
+}
+
+.amount__counter__number {
+}
+
+.basket__action__btns__container {
+    display: grid;
+    gap: 12px;
+}
+
+.basket__price {
+    font-size: 24px;
+}
+
+.basket__favorites-btn {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.basket__del-btn {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.basket__order__detail {
+    
+}
+
+.basket__order__heading {
+}
+
+.basket__method__of__get {
+}
+
+.basket__amount__of__product__container {
+}
+
+.basket__amount__product {
+}
+
+.basket__all-price__product {
+}
+
+.basket__detail__result {
+}
+
+.basket__detail__text {
+}
+
+.basket__detail__span {
+}
+
+/* ------------------------------------------ */
 
 
 /* All basket style end */

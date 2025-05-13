@@ -1,6 +1,7 @@
 /* Font start */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('media.css');
 
 /* Font end */
 
@@ -22,17 +23,33 @@ a, a:visited {
     text-decoration: none;
 }
 
-button:hover, a:hover {
+button:hover, a:hover, .action-btn:hover {
     cursor: pointer;
+    opacity: 0.7;
 }
 
 body {
     z-index: 0;
 }
 
+main {
+    max-width: var(--max-width) !important; 
+    margin: auto ;
+}
+
 /* Reset end */
 
-/* Переменные */
+/* Media start */
+
+@media (max-width: 1440px) {
+    main {
+        margin: var(--content-margin) ;
+    }
+}
+
+/* Media end */
+
+/* Variables */
 
 :root {
     --max-width: 1440px;

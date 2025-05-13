@@ -33,35 +33,25 @@ categoryItems.forEach((item, index) => {
     });
 });
 
+// amount counter
 
-// catalog filter
+const minus_btn = document.getElementById("amount__counter__minus")
+const plus_btn = document.getElementById("amount__counter__plus")
+let result = document.getElementById("amount__counter__res")
 
-const catalog_min_price_box = document.getElementById("catalog_min_price_box")
-const catalog_max_price_box = document.getElementById("catalog_max_price_box")
-const catalog_min_price_inp = document.getElementById("catalog_min_price_inp")
-const catalog_max_price_inp = document.getElementById("catalog_max_price_inp")
+document.addEventListener("DOMContentLoaded", () => {
+    let counter = 1;
+    
+    plus_btn.addEventListener("click", () => {
+        counter++;
+        result.textContent = counter;
+    });
 
-catalog_min_price_inp.addEventListener("input", () => {
-    catalog_min_price_box.value = catalog_min_price_inp.value;
+    minus_btn.addEventListener("click", () => {
+        if (counter > 1) { 
+            counter--;
+            result.textContent = counter;
+        }
+    });
 });
-
-catalog_max_price_inp.addEventListener("input", () => {
-    catalog_max_price_box.value = catalog_max_price_inp.value;
-});
-
-const catalog_min_power_box = document.getElementById("catalog_min_power_box")
-const catalog_max_power_box = document.getElementById("catalog_max_power_box")
-const catalog_min_power_inp = document.getElementById("catalog_min_power_inp")
-const catalog_max_power_inp = document.getElementById("catalog_max_power_inp")
-
-catalog_min_power_inp.addEventListener("input", () => {
-    catalog_min_power_box.value = catalog_min_power_inp.value;
-});
-
-catalog_max_power_inp.addEventListener("input", () => {
-    catalog_max_power_box.value = catalog_max_power_inp.value;
-});
-
-
-// Slider
 

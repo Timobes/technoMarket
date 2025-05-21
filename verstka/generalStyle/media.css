@@ -2,13 +2,26 @@
     --mobile-w: 320px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
     :root {
         --max-width: var(--mobile-w);
     }
 
+    main {
+        margin: 0 20px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
     .header__top {
         flex-direction: column;
+        display: none !important;
     }
 
     .header__top__left {

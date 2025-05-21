@@ -33,12 +33,25 @@ categoryItems.forEach((item, index) => {
     });
 });
 
+// amount counter
 
-// auth popup
+const minus_btn = document.getElementById("amount__counter__minus")
+const plus_btn = document.getElementById("amount__counter__plus")
+let result = document.getElementById("amount__counter__res")
 
-const burgerBtn = document.getElementById("burger-btn")
-const burger = document.getElementById("burger")
+document.addEventListener("DOMContentLoaded", () => {
+    let counter = 1;
+    
+    plus_btn.addEventListener("click", () => {
+        counter++;
+        result.textContent = counter;
+    });
 
-burgerBtn.addEventListener("click", () => {
-    burger.classList.toggle("burger-open")
-})
+    minus_btn.addEventListener("click", () => {
+        if (counter > 1) { 
+            counter--;
+            result.textContent = counter;
+        }
+    });
+});
+

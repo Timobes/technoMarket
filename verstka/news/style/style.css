@@ -1,0 +1,60 @@
+/* Main start */
+
+.main {
+    max-width: var(--content-width);
+
+    /* margin: var(--content-margin); */
+
+    display: flex; 
+    flex-direction: column;
+
+    padding: 96px 0;
+
+    row-gap: 96px;
+}
+
+/* Main end */
+
+.breadcrumb__navigation {
+    display: flex;
+
+    column-gap: 24px;
+}
+
+.breadcrumb__elem {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb__elem:hover {
+    cursor: pointer;
+}
+
+.breadcrumb__line {
+    width: 20px;
+
+    margin: auto 0;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------------------------ */
+
+.blog__container {
+    display: grid;
+    gap: 20px;
+}
+
+.blog__heading {
+    font-size: 32px;
+}
+
+.blog__date {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.blog__img {
+}
+
+.blog__text {
+    font-size: 16px;
+}

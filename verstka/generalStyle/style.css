@@ -612,6 +612,9 @@ main {
 
     display: flex;
     align-items: center;
+
+    flex-wrap: wrap;
+
     gap: 24px;
 
     background-color: #f4f5f6;

@@ -3,7 +3,7 @@
 .main {
     max-width: var(--content-width);
 
-    margin: var(--content-margin);
+    /* margin: var(--content-margin); */
 
     display: flex; 
     flex-direction: column;

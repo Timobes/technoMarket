@@ -42,3 +42,22 @@ const burger = document.getElementById("burger")
 burgerBtn.addEventListener("click", () => {
     burger.classList.toggle("burger-open")
 })
+
+
+//  Carousel
+
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const leftBtn = carousel.querySelector('.carousel__left-btn')
+  const rightBtn = carousel.querySelector('.carousel__right-btn')
+  const carouselContainer = carousel.querySelector('.main__carousel')
+
+  leftBtn.addEventListener('click', () => {
+    carouselContainer.scrollBy({ left: -300, behavior: 'smooth' })
+  })
+
+  rightBtn.addEventListener('click', () => {
+    carouselContainer.scrollBy({ left: 300, behavior: 'smooth' })
+  })
+})
+
+

@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        // Показываем pop-up при наведении на корзину
+        $(".header__nav__item:contains('Корзина')").hover(
+            function() {
+                $("#popup").fadeIn(200); // Показываем
+            },
+            function() {
+                $("#popup").fadeOut(200); // Скрываем
+            }
+        );
+    });
+    </script>
+
     <!-- Meta information -->
     <link rel="stylesheet" href="../generalStyle/style.css">
     <link rel="stylesheet" href="style/style.css">
@@ -158,6 +174,16 @@
                         <a href="#" class="header__nav__item">Сравнение товаров</a>
                         <a href="#" class="header__nav__item">Избранное</a>
                         <a href="#" class="header__nav__item">Корзина</a>
+                        <div id="popup" style="">
+                            <h2>Робот-пылесос Xiaomi Robot Vacuum E12 EU</h2>
+                            <p>1шт. x 30.000 руб</p>
+
+                            <h2>Робот-пылесос Xiaomi Robot Vacuum E12 EU</h2>
+                            <p>1шт. x 30.000 руб</p>
+
+                            <div class="action-btn">В корзину</div>
+                        </div>
+
                     </div>
 
                     <div class="header__auth__container action-btn">

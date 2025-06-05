@@ -18,6 +18,25 @@
 
 /* Main end */
 
+
+
+/* Pop up start */
+
+#popup {
+    display:none; 
+    z-index: 8; 
+    position: absolute;
+    top: 100px; 
+    right: 80px; 
+    color: #000;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Pop up end */
+
+
+
 /* Hero start */
 
 .hero {

@@ -13,6 +13,11 @@
 
     .burger {
         display: none;
+        padding: 10px 10px;
+    }
+
+    #burger {
+        flex-wrap: wrap;
     }
 
     .burger-btn {
@@ -45,6 +50,8 @@
     .header__right {
         flex-direction: column;
         align-items: center;
+
+        text-align: center;
     }
 
     .header__nav__container {
@@ -135,5 +142,29 @@
 
     /* Product page end */
 
+
+
+    /* Basket page start */
+
+    .basket__page__container {
+        justify-content: center !important;
+    }
+
+    .profile__lk__heading {
+        text-align: center;
+    }
+
+    .basket__address__express {
+        justify-content: center;
+    }
+
+    /* Basket page end */
+
+
+    /* Profile start */
+
+    
+    
+    /* Porfile end */
 }
 
